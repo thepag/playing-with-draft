@@ -1,0 +1,13 @@
+{
+  "name": "playing-with-draft",
+  "version": "0.0.0",
+  "description": "Playing with draft.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thepag/playing-with-draft.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^1.13.3"
+  }
+}
