@@ -9,7 +9,8 @@
 * babel
 * eslint
 * react
+* draft
 
 ## WIP
 
-* draft
+* explore draft.js
