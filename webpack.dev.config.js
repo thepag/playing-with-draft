@@ -11,7 +11,7 @@ var SrcPath = resolve('src');
 var config = {
 
   entry: {
-    app: [ 'webpack-dev-server/client?http://localhost:3000', 'webpack/hot/only-dev-server', './src/index.js' ],
+    app: [ 'webpack-dev-server/client?http://localhost:3000', 'webpack/hot/only-dev-server', './src/index.jsx' ],
     vendor: [ 'react' ]
   },
 

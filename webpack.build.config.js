@@ -10,7 +10,7 @@ var SrcPath = resolve('src');
 
 var config = {
   entry: {
-    app: [ './src/index.js' ],
+    app: [ './src/index.jsx' ],
     vendor: [ 'react' ]
   },
   output: {
