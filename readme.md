@@ -7,9 +7,9 @@
   * development server
   * hot loading
 * babel
+* eslint
 * react
 
 ## WIP
 
-* eslint
 * draft
