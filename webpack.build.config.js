@@ -23,13 +23,12 @@ var config = {
     loaders: [
       {
         test: /\.(jsx|js)$/,
-        loader: 'babel-loader'
+        loader: 'babel-loader',
         include: SrcPath,
       }
     ]
   },
   plugins: [
-    new StringReplacePlugin(),
     new webpack.optimize.CommonsChunkPlugin(/* chunkName= */'vendor', /* filename= */'vendor.bundle.js'),
   ],
 };
