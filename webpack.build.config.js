@@ -11,16 +11,19 @@ var resolve = path.resolve.bind(null, __dirname);
 var SrcPath = resolve('src');
 
 var config = {
+
   entry: {
     app: [ './src/index.jsx' ],
     vendor: [ 'react' ]
   },
+
   output: {
     path: path.resolve('./build/bundle/'),
     filename: '[name].bundle.js',
     publicPath: '/bundle/',
     chunkFilename: '[id].js'
   },
+
   module: {
     loaders: [
       {
@@ -30,6 +33,14 @@ var config = {
       }
     ]
   },
+
+  resolve: {
+    root: [
+      path.resolve(SrcPath),
+    ],
+    extensions: [ '', '.js', '.jsx' ]
+  },
+
   plugins: [
     new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.bundle.js'),
   ],
