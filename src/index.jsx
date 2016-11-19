@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Editor from 'modules/editor';
+import Editor from './modules/editor';
 
 ReactDOM.render(
   <div>
