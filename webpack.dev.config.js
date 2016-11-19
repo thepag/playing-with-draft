@@ -34,10 +34,17 @@ var config = {
     ]
   },
 
+  resolve: {
+    root: [
+      path.resolve(SrcPath),
+    ],
+    extensions: [ '', '.js', '.jsx' ]
+  },
+
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
-    new webpack.optimize.CommonsChunkPlugin(/* chunkName= */'vendor', /* filename= */'vendor.bundle.js'),
+    new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.bundle.js'),
   ],
 
   devServer: {
